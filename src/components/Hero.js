@@ -12,12 +12,12 @@ const Hero = () => {
   useHoverEffect(heroImageRef, data.img1, data.img2);
 
   return (
-    <div className='hero container mx-auto mt-20'>
+    <div className='hero container mx-auto mt-20 flex justify-center items-center overflow-hidden'>
       <div className='hero-image' ref={heroImageRef}></div>
-      <div className='shutter'>
-        <h2>ReactJS</h2>
+      <div className='shutter shutter-left overflow-hidden'>
+        <h2>Front-end</h2>
       </div>
-      <div className='shutter'>
+      <div className='shutter shutter-right overflow-hidden'>
         <h2>Developer</h2>
       </div>
       <div className='circle-left'></div>

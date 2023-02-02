@@ -9,7 +9,7 @@ export const useHoverEffect = (el, img1, img2) => {
       image1: img1,
       image2: img2,
       displacementImage: cloud,
-      intensity: 0.5,
+      intensity: 0.3,
     });
   }, [el, img1, img2]);
 };
