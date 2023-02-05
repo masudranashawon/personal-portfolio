@@ -61,7 +61,8 @@ body {
   position: relative;
 }
 
-.hero-image {
+.hero-image,
+.project-right {
   width: 500px;
   height: 500px;
   overflow: hidden;
@@ -123,4 +124,10 @@ body {
 .shutter-right {
   bottom: 0;
   right: 0;
+}
+
+.section-title {
+  font-size: 10rem;
+  line-height: 1;
+  font-family: "Cosi Azure";
 }
