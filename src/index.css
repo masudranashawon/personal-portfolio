@@ -131,3 +131,40 @@ body {
   line-height: 1;
   font-family: "Cosi Azure";
 }
+
+.skill-item {
+  position: relative;
+}
+
+.skill-item::after,
+.skill-item::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-light);
+}
+
+.skill-item::before {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.skill-item::after {
+  width: 0%;
+  transition: all 0.5s;
+  background-color: #22d3ee;
+}
+
+.skill-item:hover::after {
+  width: 100%;
+}
+
+.skill-number {
+  font-size: 5rem;
+}
+
+.skill-title {
+  font-size: 2rem;
+}
