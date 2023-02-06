@@ -37,6 +37,11 @@ body {
   position: relative;
 }
 
+input[type="submit"] {
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
 .link-item {
   position: relative;
 }
