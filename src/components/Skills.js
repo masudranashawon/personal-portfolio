@@ -19,7 +19,7 @@ const data = [
 
 const Skills = () => {
   return (
-    <div className='skills container mx-auto mt-40'>
+    <div className='skills container mx-auto mt-40' id='skills'>
       <SectionTitle title={"Skills"} />
       <div className='skills-wrapper grid grid-cols-2 mt-40 gap-10'>
         <ul className='skills-left flex flex-col gap-10'>
