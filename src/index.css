@@ -14,6 +14,12 @@
   --color-light: #f7f7f7;
 }
 
+*,
+*::after,
+*::before {
+  cursor: none;
+}
+
 html,
 body {
   overflow-x: none;
@@ -31,6 +37,39 @@ body {
   line-height: 1.6;
   letter-spacing: 2px;
   word-spacing: 3px;
+}
+
+.inner-cursor {
+  background-color: var(--color-light);
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  left: 10px;
+  z-index: 9999;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow {
+  width: 25px;
+  height: 25px;
+}
+
+.outer-cursor {
+  position: fixed;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  z-index: 9999;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  border: 1px solid var(--color-light);
+  transition: 0.1s;
 }
 
 .app {
