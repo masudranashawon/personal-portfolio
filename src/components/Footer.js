@@ -1,9 +1,18 @@
+import { useRef } from "react";
 import { HashLink } from "react-router-hash-link";
+import { useFooterReveal } from "../hooks/gsap";
 
 const Footer = () => {
+  const footerRef = useRef(null);
+
+  useFooterReveal(footerRef);
+
   return (
-    <footer className='footer container my-40 text-center text-white/50 overflow-hidden'>
-      <p>
+    <footer>
+      <p
+        ref={footerRef}
+        className='footer my-40  text-center text-white/50 overflow-hidden'
+      >
         &copy; {new Date().getFullYear()}{" "}
         <HashLink
           smooth

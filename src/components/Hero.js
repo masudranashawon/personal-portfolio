@@ -1,15 +1,22 @@
 import { useRef } from "react";
 import { useHoverEffect } from "../hooks/useHoverEffect";
+import { useImageReveal, useHeadlineReveal } from "../hooks/gsap";
 
 const data = {
-  img1: "https://images.pexels.com/photos/4061512/pexels-photo-4061512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  img2: "https://images.pexels.com/photos/2460488/pexels-photo-2460488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  img1: "https://res.cloudinary.com/drgxflcsb/image/upload/v1676030149/Personal%20Portfolio/masud-image2_xhvc03.jpg",
+  img2: "https://res.cloudinary.com/drgxflcsb/image/upload/v1676030149/Personal%20Portfolio/masud-image1_rejzqv.jpg",
 };
 
 const Hero = () => {
   const heroImageRef = useRef(null);
+  const heroHeadline1Ref = useRef(null);
+  const heroHeadline2Ref = useRef(null);
+
+  const headlLines = [heroHeadline1Ref, heroHeadline2Ref];
 
   useHoverEffect(heroImageRef, data.img1, data.img2);
+  useImageReveal(heroImageRef, 0.5);
+  useHeadlineReveal(headlLines, 1.5);
 
   return (
     <div
@@ -18,10 +25,10 @@ const Hero = () => {
     >
       <div className='hero-image' ref={heroImageRef}></div>
       <div className='shutter shutter-left overflow-hidden'>
-        <h2>Front-end</h2>
+        <h2 ref={heroHeadline1Ref}>Front-end</h2>
       </div>
       <div className='shutter shutter-right overflow-hidden'>
-        <h2>Developer</h2>
+        <h2 ref={heroHeadline2Ref}>Developer</h2>
       </div>
       <div className='circle-left'></div>
       <div className='circle-right'></div>
