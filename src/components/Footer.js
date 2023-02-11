@@ -8,11 +8,8 @@ const Footer = () => {
   useFooterReveal(footerRef);
 
   return (
-    <footer>
-      <p
-        ref={footerRef}
-        className='footer my-40  text-center text-white/50 overflow-hidden'
-      >
+    <footer className='footer py-40 text-center text-white/50 overflow-hidden'>
+      <p ref={footerRef} className=''>
         &copy; {new Date().getFullYear()}{" "}
         <HashLink
           smooth

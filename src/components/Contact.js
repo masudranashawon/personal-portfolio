@@ -1,8 +1,11 @@
 import { useRef } from "react";
 import { useFormControlReveal } from "../hooks/gsap";
+import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
+  const formRef = useRef(null);
   const formCtrl1Ref = useRef(null);
   const formCtrl2Ref = useRef(null);
   const formCtrl3Ref = useRef(null);
@@ -16,6 +19,39 @@ const Contact = () => {
     e.preventDefault();
 
     //Email JS integration
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_PUBLIC_ID
+      )
+      .then(
+        () => {
+          toast("Message send successfully!", {
+            position: "bottom-left",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        },
+        () => {
+          toast.error("Message failed! Try again letter", {
+            position: "bottom-left",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
+        }
+      );
 
     //Rest
     e.target.querySelector(".fullname").value = "";
@@ -27,7 +63,11 @@ const Contact = () => {
     <div className='contact container mx-auto mt-40' id='contact'>
       <SectionTitle title={"Let's Talk"} />
 
-      <form onSubmit={sendMail} className='mt-40 grid grid-cols-2 gap-20'>
+      <form
+        onSubmit={sendMail}
+        className='mt-40 grid grid-cols-2 gap-20'
+        ref={formRef}
+      >
         <div className='form-control overflow-hidden' ref={formCtrl1Ref}>
           <input
             type='text'
@@ -48,8 +88,8 @@ const Contact = () => {
         </div>
         <div className='form-control overflow-hidden' ref={formCtrl3Ref}>
           <textarea
-            name='massage'
-            placeholder='Write your massage'
+            name='message'
+            placeholder='Write your message'
             required
             rows='1'
             cols='30'
@@ -59,7 +99,7 @@ const Contact = () => {
         <div className='form-control overflow-hidden' ref={formCtrl4Ref}>
           <input
             type='submit'
-            value='Send massage'
+            value='Send message'
             className='submit uppercase bg-transparent border border-white/20 py-16 px-28 rounded-full outline-none tracking-widest w-full hover:bg-cyan-400/20 hover:border-cyan-400/20  duration-500'
           />
         </div>
