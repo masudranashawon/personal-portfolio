@@ -196,7 +196,7 @@ export const useFooterReveal = (el) => {
   }, [el]);
 };
 
-export const useFormControlReveal = (items, delay = 0) => {
+export const useInputReveal = (items, delay = 0) => {
   useEffect(() => {
     const el = items.map((item) => item.current);
 

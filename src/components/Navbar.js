@@ -30,7 +30,7 @@ const Navbar = ({ footerNav }) => {
       } uppercase`}
     >
       <div className='logo'>
-        <HashLink smooth to='#hero' className='link-item' ref={link1Ref}>
+        <HashLink smooth to='#home' className='link-item' ref={link1Ref}>
           {footerNav ? "Go to top" : "Masud Rana Shawon"}
         </HashLink>
       </div>

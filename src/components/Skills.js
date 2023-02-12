@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import SectionTitle from "./SectionTitle";
 import { useSkillLineReveal, useSkillTextReveal } from "../hooks/gsap";
+import SectionTitle from "./SectionTitle";
 
 const data = [
   { id: 1, title: "HTML" },
@@ -33,7 +33,7 @@ const Skills = () => {
   return (
     <div className='skills container mx-auto mt-40' id='skills'>
       <SectionTitle title={"My Skills"} />
-      <div className='skills-wrapper grid grid-cols-2 mt-40 gap-10'>
+      <div className='skills-wrapper grid grid-cols-1 sm:grid-cols-2 mt-40 gap-10 sm:gap-20'>
         <ul className='skills-left flex flex-col gap-10'>
           {data
             .filter((_, i) => i < Math.floor(data.length / 2))

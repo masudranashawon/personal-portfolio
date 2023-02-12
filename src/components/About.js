@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import SectionTitle from "./SectionTitle";
 import { useHoverEffect } from "../hooks/useHoverEffect";
 import { useProjectLeftRightReveal } from "../hooks/gsap";
+import SectionTitle from "./SectionTitle";
 
 const data = {
   img1: "https://res.cloudinary.com/drgxflcsb/image/upload/v1676030150/Personal%20Portfolio/masud-image3_vxmpd0.jpg",
@@ -20,7 +20,7 @@ const About = () => {
   return (
     <div className='about container mx-auto mt-40' id='about'>
       <SectionTitle title={"About Me"} />
-      <div className='about-wrapper mt-40 grid grid-cols-2 gap-20 overflow-hidden'>
+      <div className='about-wrapper mt-40 grid grid-cols-1 gap-20 overflow-hidden lg:grid-cols-2'>
         <div className='about-left' ref={aboutLeftRef}></div>
         <div className='about-right' ref={aboutRightRef}>
           <p>

@@ -25,10 +25,10 @@ const Hero = () => {
     >
       <div className='hero-image' ref={heroImageRef}></div>
       <div className='shutter shutter-left overflow-hidden'>
-        <h2 ref={heroHeadline1Ref}>Front-end</h2>
+        <h1 ref={heroHeadline1Ref}>Front-end</h1>
       </div>
       <div className='shutter shutter-right overflow-hidden'>
-        <h2 ref={heroHeadline2Ref}>Developer</h2>
+        <h1 ref={heroHeadline2Ref}>Developer</h1>
       </div>
       <div className='circle-left'></div>
       <div className='circle-right'></div>

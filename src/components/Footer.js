@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className='footer py-40 text-center text-white/50 overflow-hidden'>
-      <p ref={footerRef} className=''>
+      <p ref={footerRef}>
         &copy; {new Date().getFullYear()}{" "}
         <HashLink
           smooth

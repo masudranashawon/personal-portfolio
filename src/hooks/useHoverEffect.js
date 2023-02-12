@@ -1,5 +1,5 @@
-import hoverEffect from "hover-effect";
 import { useEffect } from "react";
+import hoverEffect from "hover-effect";
 import cloud from "../assets/images/cloud.png";
 
 export const useHoverEffect = (el, img1, img2) => {
