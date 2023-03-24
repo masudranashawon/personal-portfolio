@@ -4,6 +4,27 @@ import SectionTitle from "./SectionTitle";
 const data = [
   {
     id: 1,
+    title: "Proxima: Project Management Web Application",
+    image1:
+      "https://res.cloudinary.com/drgxflcsb/image/upload/v1679669817/Personal%20Portfolio/proxima-one_rzufpn.png",
+    image2:
+      "https://res.cloudinary.com/drgxflcsb/image/upload/v1679669817/Personal%20Portfolio/proxima-two_zrwmos.png",
+    description:
+      "Proxima is a project management application built using the MERN stack. The application allows users to create, update, and delete their own projects with ease. Proxima is designed with high-level security in mind, featuring strong JWT authentication and front-end route protection to ensure the safety and privacy of user data.",
+    tools: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+    ],
+    liveLink: "https://proxima-web.netlify.app/",
+    frontEndLink: "https://github.com/masudranashawon/proxima-client",
+    backEndLink: "https://github.com/masudranashawon/proxima-server",
+  },
+  {
+    id: 2,
     title: "Tech Alpha: Online Electronics Accessories Store",
     image1:
       "https://res.cloudinary.com/drgxflcsb/image/upload/v1675615229/Personal%20Portfolio/tech-alpha-1_lgzxvt.png",
@@ -17,7 +38,7 @@ const data = [
     backEndLink: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Foodverse: A Recipe Finder Web Application",
     image1:
       "https://res.cloudinary.com/drgxflcsb/image/upload/v1675615230/Personal%20Portfolio/foodverse-1_mkf88w.png",
