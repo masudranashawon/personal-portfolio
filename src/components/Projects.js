@@ -19,7 +19,7 @@ const data = [
       "MongoDB",
       "JWT",
     ],
-    liveLink: "https://proxima-web.netlify.app/",
+    liveLink: "https://proxima-application.netlify.app",
     frontEndLink: "https://github.com/masudranashawon/proxima-client",
     backEndLink: "https://github.com/masudranashawon/proxima-server",
   },
