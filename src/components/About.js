@@ -43,7 +43,7 @@ const About = () => {
           </p>
           <a
             className='uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-300 inline-block mt-10'
-            href='https://docs.google.com/document/d/1Y8kb59-ak90Cdj2IJn5TbzC9OdF4VjTzo0t0ND90-_s/edit?usp=sharing'
+            href='https://drive.google.com/file/d/1v1bK2o8jI-ogJtaCIy1w5aUqpCObgHA5/view'
             target='_blank'
             rel='noreferrer'
           >
