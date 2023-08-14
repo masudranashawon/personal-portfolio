@@ -38,14 +38,29 @@ const Project = ({ project }) => {
           >
             Live Site
           </a>
-          <a
-            className='uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-300'
-            href={project.frontEndLink}
-            target='_blank'
-            rel='noreferrer'
-          >
-            Front-End Code
-          </a>
+
+          {project.fullStackLink && (
+            <a
+              className='uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-300'
+              href={project.fullStackLink}
+              target='_blank'
+              rel='noreferrer'
+            >
+              Full Stack Code
+            </a>
+          )}
+
+          {project.frontEndLink && (
+            <a
+              className='uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-300'
+              href={project.frontEndLink}
+              target='_blank'
+              rel='noreferrer'
+            >
+              Front-End Code
+            </a>
+          )}
+
           {project.backEndLink && (
             <a
               className='uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-300'
