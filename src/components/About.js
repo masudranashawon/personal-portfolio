@@ -43,11 +43,11 @@ const About = () => {
           </p>
           <a
             className='uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-300 inline-block mt-10'
-            href='https://drive.google.com/file/d/1e1fFCCgcWwN4XP7Es6wAeUesUIrjZgFv/view'
+            href='https://drive.google.com/uc?export=download&id=1e1fFCCgcWwN4XP7Es6wAeUesUIrjZgFv'
             target='_blank'
             rel='noreferrer'
           >
-            View My Resume
+            My Resume
           </a>
         </div>
       </div>
