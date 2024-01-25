@@ -25,7 +25,7 @@ const Hero = () => {
     >
       <div className='hero-image' ref={heroImageRef}></div>
       <div className='shutter shutter-left overflow-hidden'>
-        <h1 ref={heroHeadline1Ref}>Front-end</h1>
+        <h1 ref={heroHeadline1Ref}>Full Stack</h1>
       </div>
       <div className='shutter shutter-right overflow-hidden'>
         <h1 ref={heroHeadline2Ref}>Developer</h1>

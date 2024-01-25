@@ -9,11 +9,11 @@ const Bio = () => {
   return (
     <div className='bio mt-20 container mx-auto overflow-hidden'>
       <p ref={bioRef}>
-        Master of ReactJS, crafting stunning web application interfaces with a
-        focus on UI design and animation. Expertise in React, Redux, Tailwind,
-        and GSAP elevates every project to new heights. Passionate about
-        delivering breathtaking, pixel-perfect results. Always on the cutting
-        edge, staying ahead of the latest web development trends.
+        Passionate MERN Stack developer based in Bangladesh, consistently
+        pushing boundaries through impactful projects. I am dedicated to
+        embracing new technologies and solving complex problems with a logical
+        mindset. Committed to honest innovation, I strive to make a positive
+        societal impact through my work.
       </p>
     </div>
   );

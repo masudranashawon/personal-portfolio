@@ -11,6 +11,7 @@ import Socials from "./components/Socials";
 import CustomCursor from "./components/CustomCursor";
 
 import "react-toastify/dist/ReactToastify.css";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   const innerCursorRef = useRef(null);
@@ -21,16 +22,17 @@ const App = () => {
 
   return (
     <div className='app'>
+      <ToastContainer />
       <div className='noise'></div>
       <CustomCursor
         innerCursorRef={innerCursorRef}
         outerCursorRef={outerCursorRef}
       />
-      <ToastContainer />
       <Navbar />
       <Socials />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Navbar footerNav />
       <Footer />

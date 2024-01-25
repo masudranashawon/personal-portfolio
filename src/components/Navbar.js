@@ -10,6 +10,7 @@ const Navbar = ({ footerNav }) => {
   const link5Ref = useRef(null);
   const link6Ref = useRef(null);
   const link7Ref = useRef(null);
+  const link8Ref = useRef(null);
 
   const links = [
     link1Ref,
@@ -19,6 +20,7 @@ const Navbar = ({ footerNav }) => {
     link5Ref,
     link6Ref,
     link7Ref,
+    link8Ref,
   ];
 
   useLinkReveal(links, 2);
@@ -29,38 +31,61 @@ const Navbar = ({ footerNav }) => {
         footerNav ? "mt-40" : "mt-20"
       } uppercase`}
     >
-      <div className='logo'>
+      <div className='logo flex flex-col gap-5'>
         <HashLink smooth to='#home' className='link-item' ref={link1Ref}>
           {footerNav ? "Go to top" : "Masud Rana Shawon"}
         </HashLink>
+        {footerNav && (
+          <div
+            className='trustpilot-widget bg-[#f7f7f7] p-2 rounded-lg'
+            data-locale='en-US'
+            data-template-id='56278e9abfbbba0bdcd568bc'
+            data-businessunit-id='65b286db77b6a715fafdf9e1'
+            data-style-height='50px'
+            data-style-width='100%'
+            ref={link8Ref}
+          >
+            <a
+              href='https://www.trustpilot.com/review/masudranashawon.netlify.app'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img
+                src='https://upload.wikimedia.org/wikipedia/commons/7/78/Trustpilot_Logo_%282022%29.svg'
+                alt='Trustpilot Logo'
+                className='w-32'
+              />
+            </a>
+          </div>
+        )}
       </div>
-      <ul className='menus flex flex-col gap-3'>
-        <li>
+      <ul className='menus flex flex-col gap-3 sm:w-[170px] w-[100px]'>
+        <li className='self-start'>
           <HashLink smooth to='/' className='link-item' ref={link2Ref}>
             Home
           </HashLink>
         </li>
-        <li>
+        <li className='self-end'>
           <HashLink smooth to='#projects' className='link-item' ref={link3Ref}>
             My Projects
           </HashLink>
         </li>
-        <li>
+        <li className='self-start'>
           <HashLink smooth to='#skills' className='link-item' ref={link4Ref}>
             My Skills
           </HashLink>
         </li>
-        <li>
+        <li className='self-end'>
           <HashLink smooth to='#about' className='link-item' ref={link5Ref}>
             About Me
           </HashLink>
         </li>
-        <li>
+        <li className='self-start'>
           <HashLink smooth to='#contact' className='link-item' ref={link6Ref}>
             Contact Me
           </HashLink>
         </li>
-        <li>
+        <li className='self-end'>
           <a
             href='https://drive.google.com/uc?export=download&id=1e1fFCCgcWwN4XP7Es6wAeUesUIrjZgFv'
             target='_blank'

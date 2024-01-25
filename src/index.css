@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: "Cosi Azure";
-  src: url(./assets/fonts/CosiAzure-Bold.ttf);
+  font-family: "Rusilla Serif";
+  src: url(./assets/fonts/RusillaSerif.otf);
 }
 
 :root {
@@ -55,11 +55,9 @@ html {
 body {
   background-color: var(--color-dark);
   color: var(--color-light);
-  font-family: "Michroma", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
   line-height: 1.6;
-  letter-spacing: 2px;
-  word-spacing: 3px;
 }
 
 .inner-cursor {
@@ -102,6 +100,13 @@ body {
 input[type="submit"] {
   letter-spacing: inherit;
   word-spacing: inherit;
+}
+
+input,
+textarea,
+button {
+  letter-spacing: 2px;
+  word-spacing: 3px;
 }
 
 .link-item {
@@ -151,8 +156,8 @@ input[type="submit"] {
 
 .circle-left,
 .circle-right {
-  width: 1000px;
-  height: 1000px;
+  width: 60vw;
+  aspect-ratio: 1/1;
   position: fixed;
   border: 1px dashed var(--color-light);
   border-radius: 50%;
@@ -179,9 +184,10 @@ input[type="submit"] {
 
 .shutter {
   position: absolute;
-  font-size: 10rem;
+  font-size: 13rem;
   z-index: 100;
-  font-family: "Cosi Azure", sans-serif;
+  font-family: "Rusilla Serif", serif;
+  font-weight: bold;
 }
 
 .shutter-left {
@@ -195,9 +201,9 @@ input[type="submit"] {
 }
 
 .section-title {
-  font-size: 10rem;
+  font-size: 10vw;
   line-height: 1;
-  font-family: "Cosi Azure";
+  font-family: "Rusilla Serif";
 }
 
 .skill-item {
@@ -251,11 +257,24 @@ input[type="submit"] {
   .section-title {
     font-size: 8rem;
   }
+
+  .shutter {
+    font-size: 12rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
+  .circle-left,
+  .circle-right {
+    width: 80vw;
+  }
+
   html {
     font-size: 50%;
+  }
+
+  .container {
+    padding: 0 2rem;
   }
 
   .hero::before,
@@ -263,8 +282,15 @@ input[type="submit"] {
     font-size: 6rem;
   }
 
-  .section-title {
-    font-size: 6rem;
+  .hero-image,
+  .about-left {
+    width: 100%;
+    height: 500px;
+  }
+
+  .project-right {
+    width: 100%;
+    height: 300px;
   }
 }
 
@@ -273,12 +299,27 @@ input[type="submit"] {
     font-size: 40%;
   }
 
+  .circle-left,
+  .circle-right {
+    width: 90vw;
+  }
+
   .hero::before,
   .hero::after {
     font-size: 5rem;
   }
 
   .section-title {
-    font-size: 5rem;
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .shutter {
+    font-size: 8rem;
+  }
+
+  .shutter {
+    font-size: 7rem;
   }
 }

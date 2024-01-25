@@ -24,30 +24,29 @@ const About = () => {
         <div className='about-left' ref={aboutLeftRef}></div>
         <div className='about-right' ref={aboutRightRef}>
           <p>
-            Welcome to my personal portfolio! Unleashing the Power of ReactJS, I
-            am a developer with a passion for crafting stunning web
-            applications. With a focus on UI design and animation, I bring a
-            unique blend of technical skills and artistic vision to every
-            project. Expertise in React, Redux, Tailwind, and GSAP, combined
-            with a commitment to delivering pixel-perfect results, sets me apart
-            as a true master of my craft
+            Welcome to my portfolio! I'm deeply passionate about JavaScript and
+            its power in creating dynamic web applications. My journey into web
+            development began in July 2022, and since then, I've immersed myself
+            in MERN stack development. Constantly learning and pushing
+            boundaries, I thrive on building innovative solutions. My insatiable
+            curiosity drives me to stay updated with the latest developments,
+            ensuring I contribute to technological advancement through impactful
+            projects.
           </p>
           <p className='mt-10'>
-            Breathing life into user interfaces is my specialty. Utilizing the
-            latest tools, including the powerful GreenSock Animation Platform
-            (GSAP), I bring dynamic and engaging user experiences to life. With
-            a strong background in design, including proficiency in Adobe
-            Photoshop and Illustrator, I have the ability to seamlessly blend
-            technical skills with artistic vision. The result? Stunning,
-            functional web applications that exceed clients' expectations.
+            As a MERN stack developer based in Bangladesh, I am committed to
+            honing my skills and solving complex problems with logic. I approach
+            every project with a dedication to honest innovation, aiming for a
+            positive societal impact. My goal is to not only meet but exceed
+            expectations, delivering excellence in every endeavor.
           </p>
           <a
             className='uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-300 inline-block mt-10'
-            href='https://drive.google.com/uc?export=download&id=1e1fFCCgcWwN4XP7Es6wAeUesUIrjZgFv'
+            href='https://drive.google.com/file/d/1e1fFCCgcWwN4XP7Es6wAeUesUIrjZgFv/view?usp=drive_link'
             target='_blank'
             rel='noreferrer'
           >
-            My Resume
+            View My Resume
           </a>
         </div>
       </div>
