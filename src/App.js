@@ -9,9 +9,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Socials from "./components/Socials";
 import CustomCursor from "./components/CustomCursor";
+import NotFound from "./components/NotFound";
 
 import "react-toastify/dist/ReactToastify.css";
-import NotFound from "./components/NotFound";
 
 const App = () => {
   const innerCursorRef = useRef(null);

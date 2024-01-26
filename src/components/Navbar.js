@@ -36,15 +36,7 @@ const Navbar = ({ footerNav }) => {
           {footerNav ? "Go to top" : "Masud Rana Shawon"}
         </HashLink>
         {footerNav && (
-          <div
-            className='trustpilot-widget bg-[#f7f7f7] p-2 rounded-lg'
-            data-locale='en-US'
-            data-template-id='56278e9abfbbba0bdcd568bc'
-            data-businessunit-id='65b286db77b6a715fafdf9e1'
-            data-style-height='50px'
-            data-style-width='100%'
-            ref={link8Ref}
-          >
+          <div className='bg-[#f7f7f7] p-3 rounded-lg' ref={link8Ref}>
             <a
               href='https://www.trustpilot.com/review/masudranashawon.netlify.app'
               target='_blank'
