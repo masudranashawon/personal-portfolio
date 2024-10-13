@@ -1,13 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: "Rusilla Serif";
-  src: url(./assets/fonts/RusillaSerif.otf);
-}
 
 :root {
   --color-dark: #050505;
@@ -186,8 +180,7 @@ button {
   position: absolute;
   font-size: 13rem;
   z-index: 100;
-  font-family: "Rusilla Serif", serif;
-  font-weight: bold;
+  font-family: "DM Serif Text", serif;
 }
 
 .shutter-left {
@@ -203,7 +196,7 @@ button {
 .section-title {
   font-size: 10vw;
   line-height: 1;
-  font-family: "Rusilla Serif";
+  font-family: "DM Serif Text", serif;
 }
 
 .skill-item {
