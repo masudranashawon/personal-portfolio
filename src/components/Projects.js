@@ -34,7 +34,7 @@ const data = [
     image2:
       "https://res.cloudinary.com/drgxflcsb/image/upload/v1679669817/Personal%20Portfolio/proxima-two_zrwmos.png",
     description:
-      "Proxima is a project management application built using the MERN stack. The application allows users to create, update, and delete their own projects with ease. Proxima is designed with high-level security in mind, featuring strong JWT authentication and front-end route protection to ensure the safety and privacy of user data.",
+      "Proxima is a project management application built using the MERN Stack. The application allows users to create, update, and delete their own projects with ease. Proxima is designed with high-level security in mind, featuring strong JWT authentication and front-end route protection to ensure the safety and privacy of user data.",
     tools: [
       "React.js",
       "Tailwind CSS",
@@ -82,9 +82,9 @@ const data = [
 
 const Projects = () => {
   return (
-    <div className='projects container mx-auto mt-40' id='projects'>
+    <div className="projects container mx-auto mt-40" id="projects">
       <SectionTitle title={"My Projects"} />
-      <div className='projects-wrapper mt-40 flex flex-col gap-10'>
+      <div className="projects-wrapper mt-40 flex flex-col gap-10">
         {data.map((project) => (
           <Project key={project.id} project={project} />
         ))}

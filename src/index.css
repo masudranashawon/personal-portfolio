@@ -1,7 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Moonhouse";
+  src: url("./fonts/moonhouse.woff2") format("woff2");
+}
 
 :root {
   --color-dark: #050505;
@@ -170,17 +176,16 @@ button {
   right: -20%;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .shutter {
   position: absolute;
-  font-size: 13rem;
   z-index: 100;
-  font-family: "DM Serif Text", serif;
+  font-family: Moonhouse, serif;
+}
+
+.shutter h1 {
+  font-size: 13rem;
 }
 
 .shutter-left {
@@ -196,7 +201,7 @@ button {
 .section-title {
   font-size: 10vw;
   line-height: 1;
-  font-family: "DM Serif Text", serif;
+  font-family: Moonhouse, serif;
 }
 
 .skill-item {
@@ -241,7 +246,32 @@ button {
   font-size: 2rem;
 }
 
+.shutter h1 {
+  font-size: 12rem;
+}
+
+.section-title {
+  font-size: 12rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .shutter h1 {
+    font-size: 10rem;
+  }
+
+  .section-title {
+    font-size: 9rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
   .hero::before,
   .hero::after {
     font-size: 8rem;
@@ -251,12 +281,13 @@ button {
     font-size: 8rem;
   }
 
-  .shutter {
-    font-size: 12rem;
+  .shutter h1 {
+    font-size: 8rem;
   }
 }
 
 @media screen and (max-width: 640px) {
+
   .circle-left,
   .circle-right {
     width: 80vw;
@@ -285,6 +316,10 @@ button {
     width: 100%;
     height: 300px;
   }
+
+  .shutter h1 {
+    font-size: 12vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -303,16 +338,10 @@ button {
   }
 
   .section-title {
-    font-size: 8rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .shutter {
-    font-size: 8rem;
+    font-size: 6.5rem;
   }
 
-  .shutter {
-    font-size: 7rem;
+  .shutter h1 {
+    font-size: 14vw;
   }
 }
