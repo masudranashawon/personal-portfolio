@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.59896f62.css",
+    "main.js": "/static/js/main.4e0b1e15.js",
+    "static/media/noise.gif": "/static/media/noise.2290dc385105e3fd9a35.gif",
+    "static/media/cloud.png": "/static/media/cloud.2a60f664bee6889c1d2e.png",
+    "static/media/moonhouse.woff2": "/static/media/moonhouse.0afa432864941c91145f.woff2",
+    "index.html": "/index.html",
+    "main.59896f62.css.map": "/static/css/main.59896f62.css.map",
+    "main.4e0b1e15.js.map": "/static/js/main.4e0b1e15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59896f62.css",
+    "static/js/main.4e0b1e15.js"
+  ]
+}
